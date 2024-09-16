@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck6"
+    tools:context=".login" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/l_secondary" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="@color/teal"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+
+        >
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/Imageslider"
+            app:iss_period="1000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_corner_radius="20"
+            app:iss_title_background="@drawable/gradient"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:cardCornerRadius="30dp"
+    android:layout_marginBottom="-20dp"
+    android:backgroundTint="#EDDDD4"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sevva"
+
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/l_primary"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Fight Hunger"
+            android:textSize="20dp"
+            android:textColor="#283D3B"
+            android:textStyle="italic"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <Button
+                android:id="@+id/get_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
