@@ -45,7 +45,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/gradient"
                 android:padding="8dp"
-                android:hint="Name"
+                android:hint="Username"
                 android:textColor="#121616"
                 />
             <EditText
@@ -55,25 +55,26 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/gradient"
                 android:padding="8dp"
-                android:hint="Email"
+                android:hint="Password"
                 android:textColor="#121616"
                 />
-            <EditText
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:id="@+id/edit_num"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/gradient"
-                android:padding="8dp"
-                android:hint="Phone"
-                android:textColor="#121616"
-                />
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0."
                 android:background="@color/l_primary" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="LOG IN"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"/>
 
 
         </LinearLayout>
