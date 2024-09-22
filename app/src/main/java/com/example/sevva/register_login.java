@@ -24,7 +24,7 @@ public class register_login extends AppCompatActivity {
 
         setContentView(R.layout.activity_register_login);
 
-       button = (Button) findViewById(R.id.btn);
+       button = findViewById(R.id.btn);
 
        button.setOnClickListener(new View.OnClickListener() {
            @Override
