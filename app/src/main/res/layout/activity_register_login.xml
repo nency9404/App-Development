@@ -74,7 +74,8 @@
                 android:text="LOG IN"
                 android:textSize="22dp"
                 android:textColor="@color/white"
-                android:fontFamily="sans-serif-condensed-medium"/>
+                android:fontFamily="sans-serif-condensed-medium"
+                android:id = "@+id/btn"/>
 
 
         </LinearLayout>

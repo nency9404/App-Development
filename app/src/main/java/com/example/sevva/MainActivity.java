@@ -19,46 +19,14 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    ArrayList<String> datasource;
-    LinearLayoutManager linearLayoutManager;
-    MyRvAdapter myRvAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.horizontal_img);
+
 
     }
-    class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyHolder>
-    {
-        ArrayList<String> data;
-        public MyRvAdapter(ArrayList<String> data){
-            this.data = data;
-        }
-        @NonNull
-        @Override
-        public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return null;
-        }
 
-        @Override
-        public int getItemCount() {
-            return data.size();
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-
-        }
-
-        class MyHolder extends RecyclerView.ViewHolder
-        {
-            public MyHolder(@NonNull View itemView)
-            {
-                super(itemView);
-            }
-        }
-    }
 }
