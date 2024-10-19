@@ -39,7 +39,7 @@ public class MainActivity3 extends AppCompatActivity {
         card5 = findViewById(R.id.card_5);
         card6 = findViewById(R.id.card_6);
 
-        // Set up SearchView listener
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
