@@ -43,7 +43,7 @@ public class MainActivity3 extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                // Handle search query submission
+
                 Toast.makeText(MainActivity3.this, "Searching for: " + query, Toast.LENGTH_SHORT).show();
                 return false;
             }
