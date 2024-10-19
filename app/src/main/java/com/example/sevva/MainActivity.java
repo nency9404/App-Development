@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private Database dbHandler;
     private Object view;
 
+    private Button btn;
+    public Intent i;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         etMessage = findViewById(R.id.editTextText5);
         btnSendMessage = findViewById(R.id.button);
 
+
+
+
+
+
         // Initialize DbHandler
         dbHandler = new Database(this);
 
@@ -39,12 +47,17 @@ public class MainActivity extends AppCompatActivity {
         btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 // Capture input
                 String name = etName.getText().toString();
                 String address = etAddress.getText().toString();
                 String phone = etPhone.getText().toString();
                 String email = etEmail.getText().toString();
                 String message = etMessage.getText().toString();
+
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("ADDRESS", address);
+                startActivity(intent);
 
                 // Validation
                 if (name.isEmpty() || address.isEmpty() || phone.isEmpty() || email.isEmpty() || message.isEmpty()) {
