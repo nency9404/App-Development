@@ -32,7 +32,8 @@
             app:iss_auto_cycle="true"
             app:iss_delay="1000"
             app:iss_corner_radius="20"
-            app:iss_title_background="@drawable/gradient"/>
+            app:iss_title_background="@drawable/gradient"
+            tools:ignore="MissingClass" />
 
     </androidx.cardview.widget.CardView>
 
