@@ -49,6 +49,7 @@
         android:drawableLeft="@drawable/restaurant"
         android:drawableTint="@color/white"
         android:drawablePadding="5dp"
+        android:textColor="@color/white"
         android:hint="Name"
         android:textColorHint="@color/white"
         android:inputType="text"
@@ -72,6 +73,7 @@
         android:drawableLeft="@drawable/location_on"
         android:drawableTint="@color/white"
         android:drawablePadding="5dp"
+        android:textColor="@color/white"
         android:hint="Address"
         android:textColorHint="@color/white"
         android:inputType="textMultiLine"
@@ -93,6 +95,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_backgrd"
         android:drawableLeft="@drawable/phone"
+        android:textColor="@color/white"
         android:drawableTint="@color/white"
         android:drawablePadding="5dp"
         android:hint="Phone"
@@ -116,6 +119,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_backgrd"
         android:drawableTint="@color/white"
+        android:textColor="@color/white"
         android:drawableLeft="@drawable/email"
         android:drawablePadding="5dp"
         android:hint="Email"
@@ -139,6 +143,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_backgrd"
         android:drawableTint="@color/white"
+        android:textColor="@color/white"
         android:drawableLeft="@drawable/message"
         android:drawablePadding="5dp"
         android:hint="Message"
@@ -211,5 +216,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="569dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

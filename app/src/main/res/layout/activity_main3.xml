@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/image"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/image"
+        android:text="NGOs"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:id="@+id/t1"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_below="@id/t1"
+        app:queryHint="Search"
+        android:backgroundTint="@color/Lightorange"
+        app:iconifiedByDefault="false"
+
+        />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@id/search"
+        >
+
+        <TextView
+            android:id="@+id/featuredItemsTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+             />
+
+        <TextView
+            android:id="@+id/mostRecentTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Most Recent"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:elevation="80dp"
+            android:background="@drawable/btn_bg"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+             />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/linear"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/card_1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ngo1"
+        tools:ignore="MissingClass">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Feeding India"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeding India, a Zomato giveback, is a not for profit organization, designing interventions to reduce hunger among underserved communities in India."
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="0dp"
+
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/card_2"
+        android:layout_marginTop="15dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ngo2">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Mera Parivar"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mera Parivar is not for profit organization,working for nurturing and transforming lives.we strive to develop a systematic intervention in achieving food security-zero hunger."
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/card_3"
+        android:layout_marginTop="15dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ngo3"
+        tools:ignore="MissingClass">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Roti"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roti is a volunteer-based organization that works to eliminate hunger by redistributing surplus food from restaurants and individuals to homeless and less fortunate people."
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+
+        />
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/card_4"
+            android:layout_marginTop="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ngo4"
+                    tools:ignore="MissingClass">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:text="Prayas"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prayas is a community-based organization that aims to provide nutritious meals to children, families, and the elderly. They work on long-term solutions for food security and poverty alleviation."
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/card_5"
+            android:layout_marginTop="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ngo3"
+                    tools:ignore="MissingClass">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:text="Roti"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roti is a volunteer-based organization that works to eliminate hunger by redistributing surplus food from restaurants and individuals to homeless and less fortunate people."
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/card_6"
+            android:layout_marginTop="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ngo2">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:text="Mera Parivar"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mera Parivar is not for profit organization,working for nurturing and transforming lives.we strive to develop a systematic intervention in achieving food security-zero hunger."
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

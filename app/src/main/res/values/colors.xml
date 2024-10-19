@@ -4,4 +4,8 @@
     <color name="skin">#FDDDD4</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="grey">#858484</color>
+    <color name="grey2">#B5B0B0</color>
+    <color name="orange">#FF5722</color>
+    <color name="Lightorange">#F8DFD8</color>
 </resources>
