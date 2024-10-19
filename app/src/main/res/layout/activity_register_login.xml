@@ -41,17 +41,18 @@
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="50dp"
-                android:id="@+id/edit_name"
+                android:id="@+id/edit_user"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/gradient"
                 android:padding="8dp"
-                android:hint="Username"
+                android:hint="Email"
+
                 android:textColor="#121616"
                 />
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="50dp"
-                android:id="@+id/edit_mail"
+                android:id="@+id/edit_pass"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/gradient"
                 android:padding="8dp"
@@ -76,8 +77,30 @@
                 android:textColor="@color/white"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:id = "@+id/btn"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Don't have an account?  "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register here"
+                    android:textStyle="bold"
+                    android:textColor="@color/l_primary"
+                    android:id="@+id/register_here"
+                    android:backgroundTint="#EDDDD4"
+                    />
 
 
+            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

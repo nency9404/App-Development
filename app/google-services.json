@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109985730704",
+    "project_id": "sevva-76e03",
+    "storage_bucket": "sevva-76e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109985730704:android:0fb453ae67f3f7ab860815",
+        "android_client_info": {
+          "package_name": "com.example.sevva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0y7RRDe--XojYm-FkbWJuf9giCSfopZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

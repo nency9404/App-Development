@@ -29,9 +29,6 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".register_login"
-            android:exported="false" />
-        <activity
             android:name=".login"
             android:exported="true">
             <intent-filter>
@@ -39,6 +36,28 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".register_login"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Registration"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
         </activity>
         <activity
             android:name=".MainActivity"
