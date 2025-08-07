@@ -15,10 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText etName, etAddress, etPhone, etEmail, etMessage;
     private Button btnSendMessage;
     private Database dbHandler;
-    private Object view;
-
-    private Button btn;
-    public Intent i;
 
 
     @SuppressLint("MissingInflatedId")
@@ -47,36 +43,32 @@ public class MainActivity extends AppCompatActivity {
         btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                // Capture input
                 String name = etName.getText().toString();
                 String address = etAddress.getText().toString();
                 String phone = etPhone.getText().toString();
                 String email = etEmail.getText().toString();
                 String message = etMessage.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                intent.putExtra("ADDRESS", address);
-                startActivity(intent);
-
-                // Validation
                 if (name.isEmpty() || address.isEmpty() || phone.isEmpty() || email.isEmpty() || message.isEmpty()) {
                     Toast.makeText(MainActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                // Insert data into database
-                dbHandler.insertUserDetails(name,address,phone,email,message);
+                dbHandler.insertUserDetails(name, address, phone, email, message);
 
-                // Provide feedback
                 Toast.makeText(MainActivity.this, "Message sent successfully", Toast.LENGTH_SHORT).show();
 
                 // Clear fields
-                etName.setText(name);
-                etAddress.setText(address);
-                etPhone.setText(phone);
-                etEmail.setText(email);
-                etMessage.setText(message);
+                etName.setText("");
+                etAddress.setText("");
+                etPhone.setText("");
+                etEmail.setText("");
+                etMessage.setText("");
+
+                // Start next activity
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                intent.putExtra("ADDRESS", address);
+                startActivity(intent);
             }
         });
     }

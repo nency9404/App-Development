@@ -51,7 +51,12 @@ public class MainActivity2 extends AppCompatActivity implements OnMapReadyCallba
 
         Intent intent = getIntent();
         String address = intent.getStringExtra("ADDRESS");
-        loc.setText(address);
+        if (address != null) {
+            loc.setText(address);
+            updateMapWithAddress(address);
+        } else {
+            Toast.makeText(this, "Address not found", Toast.LENGTH_SHORT).show();
+        }
 
         SupportMapFragment mapFragment= (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -61,7 +66,8 @@ public class MainActivity2 extends AppCompatActivity implements OnMapReadyCallba
         da.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity2.this, MainActivity2.class);
+                Intent i = getIntent();
+                finish(); // Finish the current instance
                 startActivity(i);
             }
         });

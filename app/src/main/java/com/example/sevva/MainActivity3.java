@@ -20,11 +20,15 @@ public class MainActivity3 extends AppCompatActivity {
     private TextView allTab, mostRecentTab;
     private CardView card1, card2, card3, card4, card5, card6;
     Intent i;
+    private String userAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);  // Inflate the layout
+
+        userAddress = getIntent().getStringExtra("ADDRESS");
+
 
         // Initialize views from layout
         searchView = findViewById(R.id.search);
@@ -84,6 +88,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity3.this, "Clicked on Feeding India", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
                 // Navigate to NGO details or perform any other action
             }
@@ -94,6 +99,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity3.this, "Clicked on Mera Parivar", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
                 // Navigate to NGO details or perform any other action
             }
@@ -104,6 +110,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity3.this, "Clicked on Roti", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
                 // Navigate to NGO details or perform any other action
             }
@@ -114,6 +121,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity3.this, "Clicked on Prayas", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
                 // Navigate to NGO details or perform any other action
             }
@@ -124,6 +132,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity3.this, "Clicked on Roti ", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
                 // Navigate to NGO details or perform any other action
             }
@@ -135,6 +144,7 @@ public class MainActivity3 extends AppCompatActivity {
                 Toast.makeText(MainActivity3.this, "Clicked on Mera Parivar ", Toast.LENGTH_SHORT).show();
                 // Navigate to NGO details or perform any other action
                 i=new Intent(MainActivity3.this, MainActivity2.class);
+                i.putExtra("ADDRESS", userAddress);
                 startActivity(i);
             }
         });
